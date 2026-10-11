@@ -1,0 +1,13 @@
+[project]
+name = "movie-revenue-analyzer-enhanced"
+version = "0.1.0"
+description = "Explore movie revenue by release year and genre"
+requires-python = ">=3.12"
+dependencies = ["streamlit>=1.50,<2", "pandas>=2.3,<4", "plotly>=6,<7"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

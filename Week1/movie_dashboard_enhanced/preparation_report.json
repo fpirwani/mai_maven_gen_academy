@@ -1,0 +1,17 @@
+{
+  "source": "train.csv",
+  "input_rows": 3000,
+  "included_rows": 3000,
+  "excluded_rows": 0,
+  "unknown_metadata": {
+    "genres": 7,
+    "cast": 26,
+    "crew": 16
+  },
+  "malformed_optional_fields": {
+    "genres": 0,
+    "cast": 0,
+    "crew": 0
+  },
+  "exclusions": []
+}
