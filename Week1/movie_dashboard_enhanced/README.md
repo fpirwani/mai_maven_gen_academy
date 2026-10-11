@@ -1,4 +1,4 @@
-# Movie Revenue Analyzer ? Enhanced comparison app
+# Movie Revenue Analyzer - Enhanced app
 
 This app is independent of `../movie_dashboard`. The original application and
 its 203-movie CSV are unchanged.
@@ -12,7 +12,7 @@ uv sync
 uv run streamlit run app.py --server.port 8504
 ```
 
-Open http://localhost:8504. The original app uses http://localhost:8503.
+Open http://localhost:8504. The original app used http://localhost:8503.
 If the original is stopped, run from the parent workspace:
 
 ```powershell
