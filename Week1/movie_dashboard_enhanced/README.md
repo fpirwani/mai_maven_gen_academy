@@ -1,9 +1,6 @@
 # Movie Revenue Analyzer - Enhanced app
 
-This app is independent of `../movie_dashboard`. The original application and
-its 203-movie CSV are unchanged.
-
-## Run alongside the original
+## Run as follows
 
 From this folder:
 
@@ -12,14 +9,9 @@ uv sync
 uv run streamlit run app.py --server.port 8504
 ```
 
-Open http://localhost:8504. The original app used http://localhost:8503.
-If the original is stopped, run from the parent workspace:
+Open http://localhost:8504.
 
-```powershell
-uv run --project movie_dashboard streamlit run movie_dashboard/app.py --server.port 8503
-```
-
-## What is different
+## Overall
 
 - Includes all 3,000 valid source movies rather than requiring every CSV field.
 - Adds median revenue per movie alongside movie count, total revenue, and years.
@@ -53,8 +45,8 @@ report. Existing names are deduplicated, and nested image nulls are irrelevant.
 The current source retains 3,000/3,000 rows, with no malformed optional lists.
 Unknown metadata: genres 7, cast 26, crew 16 movies.
 
-Dates with two-digit years use the fixed 2017 source cutoff: 00?17 map to
-2000?2017, 18?99 to 1918?1999. Prepared dates are ISO YYYY-MM-DD.
+Dates with two-digit years use the fixed 2017 source cutoff: 00-17 map to
+2000-2017, 18-99 to 1918-1999. Prepared dates are ISO YYYY-MM-DD.
 
 Each movie contributes revenue equally to its unique genres, including Unknown
 when no genre is available. A genre filter selects movies; their full genre
